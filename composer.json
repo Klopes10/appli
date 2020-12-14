@@ -1,0 +1,21 @@
+{
+    "name": "kev7/appli",
+    "description": "panier",
+    "type": "project",
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Klopes10",
+            "email": "kev671007@gmail.com"
+        }
+    ],
+    "require": {
+    },
+	
+	"autoload": {
+		"psr-4":{
+			"App\\": "src/"
+		}
+	}
+
+}
