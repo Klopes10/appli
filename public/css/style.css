@@ -2,7 +2,10 @@ html, body{
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
 }
-
+#wrapper{
+    max-width: 1024px;
+    margin: auto;
+}
 #menu{
     padding: 1em;
     margin-bottom: 1em;

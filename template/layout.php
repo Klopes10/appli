@@ -9,11 +9,28 @@
         <title>Boutique</title>
     </head>
     <body>
-        <?php 
-            include "menu.php";
-            include "messages.php";
-        ?>
-        
-        
+        <div id= "wrapper">
+        <header>
+            <?php 
+
+                include "menu.php";
+                
+            ?>  
+        </header>
+        <main>
+            <?php 
+
+                include "messages.php"; 
+
+            ?> 
+            
+            <?= $page ?>
+        </main>
+        <footer> 
+            <p>
+                &copy; 2020 - Kéké corp
+            </p>
+        </footer>
+        </div>
     </body>
 </html>

@@ -20,6 +20,22 @@
 
 
 /*----------------CHARGEMENT DE LA REPONSE AU CLIENT----------------*/
+    ob_start(); //tamporisation de sortie output buffer
+    
+    //tous les affichages à partir de ob_start() se stockent dans un tampon de sortie
     include "template/store/".$response["view"];
+    echo "kikoo";
+    print 2+1;
+
+    //ici je récupère ce qu'il y a dans le tampon et le met dans une variable
+    //(au lieu de l'afficher directement)
+    $page = ob_get_contents();
+
+    // je vide le tampon, qui ne me sert plus à rien depuis qu'on a stocké dans une variable
+    // le contenu de celui-ci
+
+    ob_end_clean();
+
+    include "template/layout.php";
 ?>
 
