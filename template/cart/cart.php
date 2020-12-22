@@ -1,26 +1,4 @@
 <?php
-    require "vendor/autoload.php";
-    
-    session_start();
-    
-?>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="public/css/style.css">
-        <title>Récapitulatif des produits</title>
-    </head>
-    <body>
-        <?php 
-            include "menu.php";
-            include "messages.php";
-        ?>
-
-        <?php
             if(!isset($_SESSION['cart']) || empty($_SESSION['cart'])){
                 echo "<p>Aucun produit en session...</p>";
             }
@@ -58,5 +36,3 @@
                 echo "<a href='traitement.php?action=clear'>Vider le panier</a>";
             }
         ?>
-    </body>
-</html>
